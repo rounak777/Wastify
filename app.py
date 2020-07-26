@@ -24,7 +24,7 @@ def import_and_predict(image_data, model):
         
         return prediction
 
-model = tf.keras.models.load_model('final_model.hdf5')
+model = tf.keras.models.load_model('trained_model.h5')
 
 st.title("Waste-Management")
 
