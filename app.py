@@ -12,7 +12,7 @@ from PIL import Image, ImageOps
 
 def import_and_predict(image_data, model):
     
-        size = (300,300)    
+        size = (32,32)    
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         image = image.convert('RGB')
         image = np.asarray(image)
